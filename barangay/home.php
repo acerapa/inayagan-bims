@@ -19,7 +19,7 @@
                               <div class="row align-items-center">
                                   <div class="col-md-8">
                                       <div class="page-header-title">
-                                          <h5 class="m-b-10">Dashboard</h5>
+                                          <h5 class="m-b-10">Brgy Management System</h5>
                                           <p class="m-b-0">Welcome to Mega Able</p>
                                       </div>
                                   </div>
@@ -43,111 +43,9 @@
                                     <!-- Page-body start -->
                                     <div class="page-body">
                                         <div class="row">
-                                            <!-- task, page, download counter  start -->
-                                            <div class="col-xl-3 col-md-6">
-                                                <div class="card">
-                                                    <div class="card-block">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-8">
-                                                                <h4 class="text-c-purple">$30200</h4>
-                                                                <h6 class="text-muted m-b-0">All Earnings</h6>
-                                                            </div>
-                                                            <div class="col-4 text-right">
-                                                                <i class="fa fa-bar-chart f-28"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-footer bg-c-purple">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-9">
-                                                                <p class="text-white m-b-0">% change</p>
-                                                            </div>
-                                                            <div class="col-3 text-right">
-                                                                <i class="fa fa-line-chart text-white f-16"></i>
-                                                            </div>
-                                                        </div>
-            
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-3 col-md-6">
-                                                <div class="card">
-                                                    <div class="card-block">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-8">
-                                                                <h4 class="text-c-green">290+</h4>
-                                                                <h6 class="text-muted m-b-0">Page Views</h6>
-                                                            </div>
-                                                            <div class="col-4 text-right">
-                                                                <i class="fa fa-file-text-o f-28"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-footer bg-c-green">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-9">
-                                                                <p class="text-white m-b-0">% change</p>
-                                                            </div>
-                                                            <div class="col-3 text-right">
-                                                                <i class="fa fa-line-chart text-white f-16"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-3 col-md-6">
-                                                <div class="card">
-                                                    <div class="card-block">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-8">
-                                                                <h4 class="text-c-red">145</h4>
-                                                                <h6 class="text-muted m-b-0">Task Completed</h6>
-                                                            </div>
-                                                            <div class="col-4 text-right">
-                                                                <i class="fa fa-calendar-check-o f-28"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-footer bg-c-red">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-9">
-                                                                <p class="text-white m-b-0">% change</p>
-                                                            </div>
-                                                            <div class="col-3 text-right">
-                                                                <i class="fa fa-line-chart text-white f-16"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-3 col-md-6">
-                                                <div class="card">
-                                                    <div class="card-block">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-8">
-                                                                <h4 class="text-c-blue">500</h4>
-                                                                <h6 class="text-muted m-b-0">Downloads</h6>
-                                                            </div>
-                                                            <div class="col-4 text-right">
-                                                                <i class="fa fa-hand-o-down f-28"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-footer bg-c-blue">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-9">
-                                                                <p class="text-white m-b-0">% change</p>
-                                                            </div>
-                                                            <div class="col-3 text-right">
-                                                                <i class="fa fa-line-chart text-white f-16"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- task, page, download counter  end -->
+                                            
+                                            <?php include "c-dashboard-counter.php"; ?>
     
-                                            <!--  sale analytics start -->
                                             <div class="col-xl-8 col-md-12">
                                                 <div class="card">
                                                     <div class="card-header">
@@ -173,7 +71,7 @@
                                                     <div class="card-block">
                                                         <div class="row">
                                                             <div class="col">
-                                                                <h4>$256.23</h4>
+                                                                <h4>Announcements</h4>
                                                                 <p class="text-muted">This Month</p>
                                                             </div>
                                                             <div class="col-auto">
@@ -182,22 +80,21 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-sm-8">
-                                                                <canvas id="this-month" style="height: 150px;"></canvas>
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                                
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card quater-card">
-                                                    <div class="card-block">
-                                                        <h6 class="text-muted m-b-15">This Quarter</h6>
-                                                        <h4>$3,9452.50</h4>
-                                                        <p class="text-muted">$3,9452.50</p>
-                                                        <h5>87</h5>
-                                                        <p class="text-muted">Online Revenue<span class="f-right">80%</span></p>
-                                                        <div class="progress"><div class="progress-bar bg-c-blue" style="width: 80%"></div></div>
-                                                        <h5 class="m-t-15">68</h5>
-                                                        <p class="text-muted">Offline Revenue<span class="f-right">50%</span></p>
-                                                        <div class="progress"><div class="progress-bar bg-c-green" style="width: 50%"></div></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -349,7 +246,7 @@
                                             <div class="col-xl-4 col-md-12">
                                                 <div class="card ">
                                                     <div class="card-header">
-                                                        <h5>Team Members</h5>
+                                                        <h5>Recent Registration</h5>
                                                         <div class="card-header-right">
                                                             <ul class="list-unstyled card-option">
                                                                 <li><i class="fa fa fa-wrench open-card-option"></i></li>
@@ -397,7 +294,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="text-center">
-                                                            <a href="#!" class="b-b-primary text-primary">View all Projects</a>
+                                                            <a href="#!" class="b-b-primary text-primary">View all</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -417,6 +314,13 @@
     </div>
     
     <?php include "c-footer-library.php"; ?>
+    <style type="text/css">
+        .js-card-count-hover {
+            background-color: transparent;
+            color: white;
+            border-color: white;
+        } 
+    </style>
 </body>
 
 </html>

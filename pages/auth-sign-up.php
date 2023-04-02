@@ -11,7 +11,7 @@
                 <div class="col-sm-12">
                     <form class="md-float-material form-material">
                         <div class="text-center">
-                            <img src="assets/images/logo.png" alt="logo.png">
+                            <img src="../assets/images/logo.png" alt="logo.png">
                         </div>
                         <div class="auth-box card">
                             <div class="card-block">
@@ -78,7 +78,7 @@
                                         <p class="text-inverse text-left"><a href="index.html"><b>Back to website</b></a></p>
                                     </div>
                                     <div class="col-md-2">
-                                        <img src="assets/images/auth/Logo-small-bottom.png" alt="small-logo.png">
+                                        <img src="../assets/images/auth/Logo-small-bottom.png" alt="small-logo.png">
                                     </div>
                                 </div>
                             </div>

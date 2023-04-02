@@ -31,7 +31,7 @@
                         <div class="main-friend-list">
                             <div class="media userlist-box waves-effect waves-light" data-id="1" data-status="online" data-username="Josephin Doe" data-toggle="tooltip" data-placement="left" title="Josephin Doe">
                                 <a class="media-left" href="#!">
-                                    <img class="media-object img-radius img-radius" src="assets/images/avatar-3.jpg" alt="Generic placeholder image ">
+                                    <img class="media-object img-radius img-radius" src="../assets/images/avatar-3.jpg" alt="Generic placeholder image ">
                                     <div class="live-status bg-success"></div>
                                 </a>
                                 <div class="media-body">
@@ -40,7 +40,7 @@
                             </div>
                             <div class="media userlist-box waves-effect waves-light" data-id="2" data-status="online" data-username="Lary Doe" data-toggle="tooltip" data-placement="left" title="Lary Doe">
                                 <a class="media-left" href="#!">
-                                    <img class="media-object img-radius" src="assets/images/avatar-2.jpg" alt="Generic placeholder image">
+                                    <img class="media-object img-radius" src="../assets/images/avatar-2.jpg" alt="Generic placeholder image">
                                     <div class="live-status bg-success"></div>
                                 </a>
                                 <div class="media-body">
@@ -49,7 +49,7 @@
                             </div>
                             <div class="media userlist-box waves-effect waves-light" data-id="3" data-status="online" data-username="Alice" data-toggle="tooltip" data-placement="left" title="Alice">
                                 <a class="media-left" href="#!">
-                                    <img class="media-object img-radius" src="assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                    <img class="media-object img-radius" src="../assets/images/avatar-4.jpg" alt="Generic placeholder image">
                                     <div class="live-status bg-success"></div>
                                 </a>
                                 <div class="media-body">
@@ -58,7 +58,7 @@
                             </div>
                             <div class="media userlist-box waves-effect waves-light" data-id="4" data-status="online" data-username="Alia" data-toggle="tooltip" data-placement="left" title="Alia">
                                 <a class="media-left" href="#!">
-                                    <img class="media-object img-radius" src="assets/images/avatar-3.jpg" alt="Generic placeholder image">
+                                    <img class="media-object img-radius" src="../assets/images/avatar-3.jpg" alt="Generic placeholder image">
                                     <div class="live-status bg-success"></div>
                                 </a>
                                 <div class="media-body">
@@ -67,7 +67,7 @@
                             </div>
                             <div class="media userlist-box waves-effect waves-light" data-id="5" data-status="online" data-username="Suzen" data-toggle="tooltip" data-placement="left" title="Suzen">
                                 <a class="media-left" href="#!">
-                                    <img class="media-object img-radius" src="assets/images/avatar-2.jpg" alt="Generic placeholder image">
+                                    <img class="media-object img-radius" src="../assets/images/avatar-2.jpg" alt="Generic placeholder image">
                                     <div class="live-status bg-success"></div>
                                 </a>
                                 <div class="media-body">
@@ -88,7 +88,7 @@
             </div>
             <div class="media chat-messages">
                 <a class="media-left photo-table" href="#!">
-                    <img class="media-object img-radius img-radius m-t-5" src="assets/images/avatar-3.jpg" alt="Generic placeholder image">
+                    <img class="media-object img-radius img-radius m-t-5" src="../assets/images/avatar-3.jpg" alt="Generic placeholder image">
                 </a>
                 <div class="media-body chat-menu-content">
                     <div class="">
@@ -106,7 +106,7 @@
                 </div>
                 <div class="media-right photo-table">
                     <a href="#!">
-                        <img class="media-object img-radius img-radius m-t-5" src="assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                        <img class="media-object img-radius img-radius m-t-5" src="../assets/images/avatar-4.jpg" alt="Generic placeholder image">
                     </a>
                 </div>
             </div>
@@ -135,7 +135,7 @@
                     <div class="pcoded-inner-navbar main-menu">
                         <div class="">
                             <div class="main-menu-header">
-                                <img class="img-80 img-radius" src="assets/images/avatar-4.jpg" alt="User-Profile-Image">
+                                <img class="img-80 img-radius" src="../assets/images/avatar-4.jpg" alt="User-Profile-Image">
                                 <div class="user-details">
                                     <span id="more-details">John Doe<i class="fa fa-caret-down"></i></span>
                                 </div>
