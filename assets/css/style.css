@@ -6676,7 +6676,7 @@ table tbody .border-bottom-info td {
 
 .pcoded[theme-layout="vertical"] .pcoded-navbar .pcoded-item > li > a {
   text-align: left;
-  padding: 5px 10px;
+  padding: 3px 10px;
   margin: 0 10px;
   border-radius: 5px; }
 .pcoded[theme-layout="vertical"] .pcoded-navbar .pcoded-item .pcoded-hasmenu .pcoded-submenu {
@@ -10529,11 +10529,6 @@ body.menu-bottom #collapse-menu {
   border-bottom-color: #00bcd4; }
 .form-material .material-group-info .material-addone i, .form-material .material-group-info .material-addone span {
   color: #00bcd4; }
-
-select.form-control, select.form-control:focus, select.form-control:hover {
-  border-top: none;
-  border-right: none;
-  border-left: none; }
 
 /* form controll end*/
 .md-input-file input[type=file] {

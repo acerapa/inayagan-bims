@@ -16,7 +16,7 @@
                           </div>
                       </div>
                       <a href="index.php">
-                          <img class="img-fluid" src="../assets/images/logo.png" alt="Theme-Logo" />
+                          <h5>Inayagan</h5>
                       </a>
                       <a class="mobile-options waves-effect waves-light">
                           <i class="ti-more"></i>
@@ -114,7 +114,7 @@
                                       </a>
                                   </li>
                                   <li class="waves-effect waves-light">
-                                      <a href="auth-normal-sign-in.php">
+                                      <a class="js-hjgftrdeswoi">
                                           <i class="ti-layout-sidebar-left"></i> Logout
                                       </a>
                                   </li>
@@ -124,3 +124,5 @@
                   </div>
               </div>
           </nav>
+
+          <script type="text/javascript"></script>

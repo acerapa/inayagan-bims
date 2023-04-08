@@ -1,6 +1,4 @@
-    <script src="../assets/js/sweetalert2@11.js"></script>
-    <script src="../assets/js/jquery/jquery.min.js"></script>
-    <script src="../assets/js/jquery-ui/jquery-ui.min.js "></script>
+    
     <script src="../assets/js/popper.js/popper.min.js"></script>
     <script src="../assets/js/bootstrap/js/bootstrap.min.js "></script>
     <script src="../assets/pages/widget/excanvas.js "></script>

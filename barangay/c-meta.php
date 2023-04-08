@@ -19,7 +19,14 @@
    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
    <link rel="stylesheet" href="../assets/css/style.css">
 
+   <script src="../assets/js/sweetalert2@11.js"></script>
+   <script src="../assets/js/jquery/jquery.min.js"></script>
+   <script src="../assets/js/jquery-ui/jquery-ui.min.js "></script>
+   
+
    <?php 
+
+   $page_name = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
 
    include "c-progress-bar.php";
 
@@ -28,21 +35,5 @@
    ?>
 
    <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_config.js"></script>
-   <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_geo.js"></script>
-   <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_localstorage_with_expiry.js"></script>
-   <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_auth.js"></script>
-   <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_ui.js"></script>
-   <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_photos.js"></script>
-   <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_reference_id.js"></script>
-   <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_datetime.js"></script>
-   <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_currency.js"></script>
-   <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_query.js"></script>
-   <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_validator.js"></script>
-   <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_json_data.js"></script>
-   <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_util_object_array.js"></script>
-   <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_url.js"></script>
-   <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_review.js"></script>
-   <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_blog.js"></script>
-   <script type="text/javascript" src="<?php echo $plugin_assets_cdn; ?>js/plugin_mailer.js"></script>
 
 <head>
