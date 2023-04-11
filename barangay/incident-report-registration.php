@@ -20,7 +20,7 @@
                                   <div class="col-md-8">
                                       <div class="page-header-title">
                                         <h5 class="m-b-10">Incident Report Registration</h5>
-                                        <p class="m-b-0">Inayagan, City of Naga, Cebu</p>
+                                        <p class="m-b-0 js-city-brgy-name-hjagxcvsfder">Barangay, City</p>
                                       </div>
                                   </div>
                                   <div class="col-md-4">

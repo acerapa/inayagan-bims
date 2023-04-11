@@ -20,7 +20,7 @@
                                   <div class="col-md-8">
                                       <div class="page-header-title">
                                           <h5 class="m-b-10">Brgy Management System</h5>
-                                          <p class="m-b-0">Welcome to Mega Able</p>
+                                          <p class="m-b-0 js-city-brgy-name-hjagxcvsfder">Barangay, City</p>
                                       </div>
                                   </div>
                                   <div class="col-md-4">
@@ -314,6 +314,7 @@
     </div>
     
     <?php include "c-footer-library.php"; ?>
+    <script type="text/javascript" src="../assets/js-custom/home.js"></script>
     <style type="text/css">
         .js-card-count-hover {
             background-color: transparent;

@@ -20,7 +20,7 @@
                                   <div class="col-md-8">
                                       <div class="page-header-title">
                                           <h5 class="m-b-10">Household Registration</h5>
-                                          <p class="m-b-0">Inayagan, City of Naga, Cebu</p>
+                                          <p class="m-b-0 js-city-brgy-name-hjagxcvsfder">Barangay, City</p>
                                       </div>
                                   </div>
                                   <div class="col-md-4">
@@ -37,23 +37,33 @@
                                     <div class="col-md-12 col-xl-6">
                                       <div class="card">
                                         <div class="card-header">
-                                          <h5>Basic Information</h5>
-                                          <span>Input <code>NA</code> if not applicable</span>
+                                          <h5>Household Registration</h5>
+                                          <span>Pease complete each required information</span>
                                         </div>
                                         <div class="card-block">
                                           <div>
                                             <div class="form-group row mt-4">
                                               <label class="col-sm-4 col-form-label">Household Name</label>
                                               <div class="col-sm-8">
-                                                <input type="text" class="form-control form-control-lg">
+                                                <input type="text" class="form-control form-control-lg js-jkbnzvxcdsfr" onkeyup="saveLocalHousehold()" >
                                                 <label class="help">Example: Rosario, James & Jane</label>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row mt-4">
+                                              <label class="col-sm-4 col-form-label">Ownership</label>
+                                              <div class="col-sm-8">
+                                                <select class="form-control form-control-lg js-bnxvzxnmsghas" onchange="saveLocalHousehold()">
+                                                  <option value="0">Select</option>
+                                                  <option value="OWN">Owned</option>
+                                                  <option value="RNT">Renting</option>
+                                                </select>
                                               </div>
                                             </div>
                                             <hr/>
                                             <div class="form-group row mt-4">
                                               <label class="col-sm-4 col-form-label">City</label>
                                               <div class="col-sm-8">
-                                                <select class="form-control form-control-lg">
+                                                <select class="form-control form-control-lg js-kmvbxzvbxsde" onchange="saveLocalHousehold()">
                                                   <option value="0">Select City</option>
                                                 </select>
                                               </div>
@@ -61,7 +71,7 @@
                                             <div class="form-group row">
                                               <label class="col-sm-4 col-form-label">Barangay</label>
                                               <div class="col-sm-8">
-                                                <select class="form-control form-control-lg">
+                                                <select class="form-control form-control-lg js-jkagxcnmdfge" onchange="saveLocalHousehold()">
                                                   <option value="0">Select Barangay</option>
                                                 </select>
                                               </div>
@@ -69,7 +79,7 @@
                                             <div class="form-group row">
                                               <label class="col-sm-4 col-form-label">Sitio</label>
                                               <div class="col-sm-8">
-                                                <select class="form-control form-control-lg">
+                                                <select class="form-control form-control-lg js-jkavbcmzbgs5" onchange="saveLocalHousehold()">
                                                   <option value="0">Select Sitio</option>
                                                 </select>
                                               </div>
@@ -77,7 +87,7 @@
                                             <div class="form-group row">
                                               <label class="col-sm-4 col-form-label">Purok</label>
                                               <div class="col-sm-8">
-                                                <select class="form-control form-control-lg">
+                                                <select class="form-control form-control-lg js-hjasbnzxnhdfe4" onchange="saveLocalHousehold()">
                                                   <option value="0">Select Purok</option>
                                                 </select>
                                               </div>
@@ -92,14 +102,17 @@
                                             <div class="form-group row">
                                               <label class="col-sm-4 col-form-label">Latitude</label>
                                               <div class="col-sm-8">
-                                                <input type="text" class="form-control form-control-lg bg-white js-jknzxbbasdfwe" readonly>
+                                                <input type="text" class="form-control form-control-lg bg-white js-jknzxbbasdfwe" onchange="saveLocalHousehold()" readonly>
                                               </div>
                                             </div>
                                             <div class="form-group row">
                                               <label class="col-sm-4 col-form-label">Longitude</label>
                                               <div class="col-sm-8">
-                                                <input type="text" class="form-control form-control-lg bg-white js-jkbncxujashd" readonly>
+                                                <input type="text" class="form-control form-control-lg bg-white js-jkbncxujashd" onchange="saveLocalHousehold()" readonly>
                                               </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end">
+                                              <button class="btn btn-primary js-hjgacvxfsder4">Register</button>
                                             </div>
                                           </div>
                                         </div>
@@ -125,6 +138,8 @@
       include "c-modal-geolocation-picker.php"; 
 
     ?>
+
+    <script type="text/javascript" src="../assets/js-custom/household-registration.js"></script>
     
 </body>
 

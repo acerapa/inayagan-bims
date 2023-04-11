@@ -118,6 +118,9 @@
     $(".js-hjagtdfbnxcd").text('0.0000000000');
     $(".js-jkbxvbcdfgbh").text('0.0000000000');
     hideModalGeoPicker();
+
+    //Callback for household registration
+    saveLocalHousehold();
   });
 
 </script>

@@ -20,7 +20,7 @@
                                   <div class="col-md-8">
                                       <div class="page-header-title">
                                           <h5 class="m-b-10">Resident Masterlist</h5>
-                                          <p class="m-b-0">Inayagan, City of Naga, Cebu</p>
+                                          <p class="m-b-0 js-city-brgy-name-hjagxcvsfder">Barangay, City</p>
                                       </div>
                                   </div>
                                   <div class="col-md-4">
@@ -39,7 +39,7 @@
                             <div class="main-body">
                               <div class="card table-card">
                                 <div class="card-header">
-                                  <h5>Projects</h5>
+                                  <input type="text" class="col-4 form-control" name="" placeholder="Search resident within the barangay">
                                   <div class="card-header-right">
                                       <ul class="list-unstyled card-option">
                                           <li><i class="fa fa fa-wrench open-card-option"></i></li>
