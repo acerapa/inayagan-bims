@@ -68,3 +68,4 @@ function registerResident(callback) {
 		callback(response);
 	});
 }
+

@@ -40,8 +40,68 @@
                                 <div class="page-wrapper">
                                     <div class="page-body">
                                         <div class="row">
-                                            
-                                            
+                                            <div class="col-sm-12 col-md-12 col-xl-8">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5>Certificate of Residency</h5>
+                                                        <span>Input <code>NA</code> if not applicable</span>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <h5 class="text-center mt-4">Republic of the Philippines</h5>
+                                                        <h5 class="text-center">Province of <span class="js-nmxaxnsdjfgr"></span> </h5>
+                                                        <h6 class="text-center"><span class="js-jkaxndtq1zma"></span> </h6>
+                                                        <h6 class="text-center">Barangay <span class="js-hbzxcvdfgftre"></span> </h6>
+
+                                                        <h5 class="text-center mt-10">OFFICE OF PUNONG BARANGAY</h5>
+                                                        <h5 class="text-center mt-10">CERTIFICATE OF RESIDENCY</h5>
+
+                                                        <h6 class="mt-10 px-20">TO WHOM IT MAY CONCERN:</h6>
+                                                        
+                                                        <p class="mt-4 px-20 text-sm indent-10 text-justify">
+                                                            This is to certify that MAURICE S. NADER, Filipino ,59 years of Age, born on Jul. 17, 1977, migrated and resides at Brgy. San Juan, Palompon, Leyte, Philippines, is personally known to me to be of good moral character and law abiding citizen in the community where she resides.
+                                                        </p>
+                                                        
+                                                        <p class="mt-2 px-20 text-sm indent-10 text-justify">
+                                                            She has never been convicted of any criminal offense involving moral turpitude cases.
+                                                        </p>
+
+                                                        <p class="mt-2 px-20 text-sm indent-10 text-justify">
+                                                            That as per record/ file in our barangay no name or person of MAURICE S. NADER has been appeared or recorded.
+                                                        </p>
+
+                                                        <p class="mt-2 px-20 text-sm indent-10 text-justify">
+                                                            This certification is issued upon the request of MAURICE S. NADER for whatever legal purpose this may serve.
+                                                        </p>
+
+                                                        <p class="mt-2 px-20 text-sm indent-10 text-justify">
+                                                            ISSUED on this 26th day of January, 2024 at Brgy. Inayagan, Naga, Cebu.
+                                                        </p>
+
+                                                        <div class="mt-3 flex px-20 gap-10 mb-20">
+                                                            <div>
+                                                                <b class="text-sm">
+                                                                    <u>MAURICE S. NADER</u>
+                                                                </b>
+                                                                <p class="text-sm m-0">Affiant</p>
+                                                                <p class="text-sm m-0">Issued on: 01/20/2024</p>
+                                                                <p class="text-sm m-0">Issued at: Inayagan, Naga</p>
+                                                            </div>
+                                                            <div>
+                                                                <div>
+                                                                    <p class="text-sm m-0">Prepared by:</p>
+                                                                    <p class="indent-10 text-sm m-0"></p>
+                                                                    <p class="indent-10 text-sm m-0">Brgy. Secretary</p>
+                                                                </div>
+                                                                <div>
+                                                                    <p class="text-sm m-0">Prepared by:</p>
+                                                                    <p class="indent-10 text-sm m-0"></p>
+                                                                    <p class="indent-10 text-sm m-0">Brgy. Captain</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

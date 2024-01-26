@@ -44,7 +44,7 @@
                           </li>
                       </ul>
                       <ul class="nav-right">
-                          <li class="header-notification">
+                          <!-- <li class="header-notification">
                               <a href="#!" class="waves-effect waves-light">
                                   <i class="ti-bell"></i>
                                   <span class="badge bg-c-red"></span>
@@ -85,7 +85,7 @@
                                       </div>
                                   </li>
                               </ul>
-                          </li>
+                          </li> -->
                           <li class="user-profile header-notification">
                               <a href="#!" class="waves-effect waves-light">
                                   <img src="../assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">

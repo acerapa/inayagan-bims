@@ -182,7 +182,7 @@
         </div>
     </div>
     <?php include "c-footer-library.php"; ?>
-    <script type="text/javascript" src="../assets/js-custom/resident-registration.js"></script>
+    <script type="text/javascript" src="../assets/js-custom-brgy/resident-registration.js"></script>
 </body>
 
 </html>

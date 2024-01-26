@@ -33,7 +33,10 @@
                             <div class="main-body">
                               <div class="card table-card">
                                 <div class="card-header">
-                                  <h5>Projects</h5>
+                                  <div class="row">
+                                    <input type="text" class="col-3 form-control js-mzxbnasdghcvbd" placeholder="Search household">
+                                    <button class="btn btn-primary ml-2 js-kaxcnmcbxcdf">Search</button>
+                                  </div>
                                   <div class="card-header-right">
                                       <ul class="list-unstyled card-option">
                                           <li><i class="fa fa fa-wrench open-card-option"></i></li>
@@ -77,7 +80,7 @@
     </div>
     
     <?php include "c-footer-library.php"; ?>
-    <script type="text/javascript" src="../assets/js-custom/household-masterlist.js"></script>
+    <script type="text/javascript" src="../assets/js-custom-brgy/household-masterlist.js"></script>
 </body>
 
 </html>

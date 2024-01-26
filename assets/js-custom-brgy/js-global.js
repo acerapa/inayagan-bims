@@ -5,7 +5,7 @@ const gv = {
 		barangay_text: 'Barangay Inayagan',
 		city_text: 'City of Naga, Cebu',
 	},
-	api: "http://127.0.0.1:8000/",
+	api: "http://localhost:8000/",
 	time: {
 		hr_01: 3600000
 	}
@@ -38,6 +38,16 @@ function fetchBrgyProfile(callback) {
 		localStorage.setItem("user_brgy_profile", JSON.stringify(response));
 		callback(response);
 	});
+}
+
+function fetchBrgyProfileLocal(callback) {
+	var data = localStorage.getItem("user_brgy_profile");
+	if(data) {
+		callback(JSON.parse(data));
+	}
+	else {
+		callback(null);
+	}
 }
 
 function getPurokName(purok_refid) {

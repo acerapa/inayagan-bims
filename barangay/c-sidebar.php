@@ -54,6 +54,13 @@
                                       <span class="pcoded-mcaret"></span>
                                   </a>
                               </li>
+                              <li class="<?php if($page_name == 'resident-bulkupload') { echo "active"; } ?>">
+                                  <a href="resident-bulkupload.php" class="waves-effect waves-dark">
+                                      <span class="pcoded-micon"><i class="ti-upload"></i><b>FC</b></span>
+                                      <span class="pcoded-mtext" data-i18n="nav.form-components.main">Bulk upload</span>
+                                      <span class="pcoded-mcaret"></span>
+                                  </a>
+                              </li>
                               <li class="<?php if($page_name == 'resident-masterlist') { echo "active"; } ?>">
                                   <a href="resident-masterlist.php" class="waves-effect waves-dark">
                                       <span class="pcoded-micon"><i class="ti-printer"></i><b>FC</b></span>

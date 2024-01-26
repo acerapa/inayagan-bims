@@ -60,9 +60,7 @@
                                                   <th>Reference No.</th>
                                                   <th>Name</th>
                                                   <th>Reg. Date</th>
-                                                  <th>Population</th>
-                                                  <th>Edit</th>
-                                                  <th>Delete</th>
+                                                  <th>Action</th>
                                                 </tr>
                                               </thead>
                                               <tbody>
@@ -86,7 +84,7 @@
         </div>
     </div>
     <?php include "c-footer-library.php"; ?>
-    <script type="text/javascript" src="../assets/js-custom/barangay-sitio.js"></script>
+    <script type="text/javascript" src="../assets/js-custom-brgy/barangay-sitio.js"></script>
 </body>
 
 </html>

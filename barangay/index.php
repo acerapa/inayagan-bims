@@ -13,7 +13,7 @@
                     
                         <form class="md-float-material form-material js-jky6abnxvsde" action="" method="post">
                             <div class="text-center">
-                                <h3 class="text-white">CIMS | Barangay</h3>
+                                <h3 class="text-white">MIS for Barangay Inayagan, City of Naga</h3>
                             </div>
                             <div class="auth-box card">
                                 <div class="card-block">
@@ -72,7 +72,7 @@
     </section>
     
     <?php include "c-footer-library.php"; ?>
-    <script type="text/javascript" src="../assets/js-custom/js-custom-brgy-index.js"></script>
+    <script type="text/javascript" src="../assets/js-custom-brgy/js-custom-brgy-index.js"></script>
 </body>
 
 </html>

@@ -139,7 +139,7 @@
 
     ?>
 
-    <script type="text/javascript" src="../assets/js-custom/household-registration.js"></script>
+    <script type="text/javascript" src="../assets/js-custom-brgy/household-registration.js"></script>
     
 </body>
 

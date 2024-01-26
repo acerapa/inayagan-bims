@@ -24,13 +24,7 @@
                                       </div>
                                   </div>
                                   <div class="col-md-4">
-                                      <ul class="breadcrumb-title">
-                                          <li class="breadcrumb-item">
-                                              <a href="index.html"> <i class="fa fa-home"></i> </a>
-                                          </li>
-                                          <li class="breadcrumb-item"><a href="#!">Dashboard</a>
-                                          </li>
-                                      </ul>
+                                    <button class="btn btn-primary">Outsider</button>
                                   </div>
                               </div>
                           </div>
@@ -39,7 +33,11 @@
                             <div class="main-body">
                               <div class="card table-card">
                                 <div class="card-header">
-                                  <input type="text" class="col-4 form-control" name="" placeholder="Search resident within the barangay">
+                                  <div class="col-sm-12 col-md-8 col-xl-8 row">
+                                    <input type="text" class="col-4 form-control js-gxcva7yszxcn" name="" placeholder="First name">
+                                    <input type="text" class="col-4 form-control js-mkxcbnzxvbdf ml-2" name="" placeholder="Surname">
+                                    <button class="btn btn-primary js-hjaxcnmvbzse ml-2">Search</button>
+                                  </div>
                                   <div class="card-header-right">
                                       <ul class="list-unstyled card-option">
                                           <li><i class="fa fa fa-wrench open-card-option"></i></li>
@@ -82,7 +80,7 @@
     </div>
     
     <?php include "c-footer-library.php"; ?>
-    <script type="text/javascript" src="../assets/js-custom/resident-masterlist.js"></script>
+    <script type="text/javascript" src="../assets/js-custom-brgy/resident-masterlist.js"></script>
 
 </body>
 

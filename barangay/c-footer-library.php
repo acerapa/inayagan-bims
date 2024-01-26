@@ -18,6 +18,6 @@
     <script src="../assets/js/vertical-layout.min.js "></script>
     <script src="../assets/pages/dashboard/custom-dashboard.js"></script>
     <script src="../assets/js/script.js "></script>
-    <script src="../assets/js-custom/js-global.js"></script>
+    <script src="../assets/js-custom-brgy/js-global.js"></script>
 
     

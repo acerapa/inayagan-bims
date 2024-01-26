@@ -16,7 +16,21 @@ function fetchHousehold(city_code, brgy_code, page) {
 	});
 }
 
+$(".js-kaxcnmcbxcdf").click(function () {
+	
+	var name 		= $(".js-mzxbnasdghcvbd").val();
+	var city_code 	= getUserCityInfo()['city_code'];
+	var brgy_code 	= getUserBrgyInfo()['brgy_code'];
+	var page 		= 1;
 
+	showLoading();
+	Plugin_ui.disableButton(".js-kaxcnmcbxcdf", "Searching...");
+	Plugin_query.getRecordPaginate("cims_household", "all", [["city_code","=",city_code],["brgy_code","=",brgy_code],["name","LIKE",name + "%"]], "name", "asc", 25, page, function (response) {
+		Plugin_ui.enableButton(".js-kaxcnmcbxcdf", "Search");
+		hideLoading();
+		appendHouseholdRows(response);
+	});
+});
 
 function appendHouseholdRows(response) {
 	household_masterlist.table = response;

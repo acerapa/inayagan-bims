@@ -16453,3 +16453,124 @@ body.dark {
   bottom: 50px;
   opacity: 1;
 }
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.pointer-events-auto {
+  pointer-events: all;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.p-1 {
+  padding: 4px;
+}
+
+.p-2 {
+  padding: 8px;
+}
+
+.p-3 {
+  padding: 12px;
+}
+
+.py-10 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.px-1 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.px-10 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.px-20 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.my-10 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.mt-10 {
+  margin-top: 40px;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+.mt-5 {
+  margin-top: 20px;
+}
+
+.mt-4 {
+  margin-top: 16px;
+}
+
+.mt-3 {
+  margin-top: 12px;
+}
+
+.mb-10 {
+  margin-bottom: 40px;
+}
+
+.mb-20 {
+  margin-bottom: 80px;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.text-base {
+  font-size: 16px;
+}
+
+.text-md {
+  font-size: 18px;
+}
+
+.indent-10 {
+  text-indent: 40px;
+}
+
+.gap-5 {
+  gap: 20px;
+}
+
+.gap-10 {
+  gap: 40px;
+}

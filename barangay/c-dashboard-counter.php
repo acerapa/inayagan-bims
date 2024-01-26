@@ -3,7 +3,7 @@
         <div class="card-block">
             <div class="row align-items-center">
                 <div class="col-8">
-                    <h4 class="text-c-purple">0.00</h4>
+                    <h4 class="text-c-purple js-jkaxbzmcbdxi">0.00</h4>
                     <h6 class="text-muted m-b-0">Population</h6>
                 </div>
                 <div class="col-4 text-right">
@@ -14,7 +14,7 @@
         <div class="card-footer bg-c-purple">
             <div class="row align-items-center">
                 <div class="col-9">
-                    <button class="btn btn-sm js-card-count-hover">Search</button>
+                    <a href="resident-masterlist.php" class="btn btn-sm js-card-count-hover">See All</a>
                 </div>
                 <div class="col-3 text-right">
                     <i class="fa fa-line-chart text-white f-16"></i>
@@ -28,7 +28,7 @@
         <div class="card-block">
             <div class="row align-items-center">
                 <div class="col-8">
-                    <h4 class="text-c-green">0.00</h4>
+                    <h4 class="text-c-green js-gfazxcvdfhjgr">0.00</h4>
                     <h6 class="text-muted m-b-0">Household</h6>
                 </div>
                 <div class="col-4 text-right">
@@ -39,7 +39,7 @@
         <div class="card-footer bg-c-green">
             <div class="row align-items-center">
                 <div class="col-9">
-                    <button class="btn btn-sm js-card-count-hover">Search</button>
+                    <a href="household-masterlist.php" class="btn btn-sm js-card-count-hover">See All</a>
                 </div>
                 <div class="col-3 text-right">
                     <i class="fa fa-line-chart text-white f-16"></i>
@@ -53,7 +53,7 @@
         <div class="card-block">
             <div class="row align-items-center">
                 <div class="col-8">
-                    <h4 class="text-c-red">0.00</h4>
+                    <h4 class="text-c-red js-fgxzcvsdfger">0.00</h4>
                     <h6 class="text-muted m-b-0">Announcements</h6>
                 </div>
                 <div class="col-4 text-right">
@@ -78,7 +78,7 @@
         <div class="card-block">
             <div class="row align-items-center">
                 <div class="col-8">
-                    <h4 class="text-c-blue">0.00</h4>
+                    <h4 class="text-c-blue js-baxcbcnvgdfhr">0.00</h4>
                     <h6 class="text-muted m-b-0">Blotter</h6>
                 </div>
                 <div class="col-4 text-right">

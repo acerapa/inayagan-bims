@@ -1,15 +1,15 @@
 
-var barangay_sitio = {
+var barangay_purok = {
 	table: {}
 };
 
 $(document).ready(function () {
-	fetchSitio(getUserBrgyInfo()['brgy_code'], 1);
+	fetchPurok(getUserBrgyInfo()['brgy_code'], 1);
 });
 
-function fetchSitio(brgy_code, page) {
+function fetchPurok(brgy_code, page) {
 	var args = {
-		table: "cims_sitio",
+		table: "cims_purok",
 		getClm: 'all',
 		where: [
 			["brgy_code", brgy_code],
@@ -23,13 +23,13 @@ function fetchSitio(brgy_code, page) {
 
 	showLoading();
 	$.get( gv.api + "api/plugin_query/getRowPaginate?" + $.param(args), function (response) {
-		barangay_sitio.table = response;
+		barangay_purok.table = response;
 		hideLoading();
-	  appendSitioTable(response);
+	  	appendPurokTable(response);
 	});
 }
 
-function appendSitioTable(response) {
+function appendPurokTable(response) {
 	var data = response.data;
 	$(".js-hjgvfcdsews tbody").html('');
 	$.each(data, function (i) {
@@ -38,21 +38,40 @@ function appendSitioTable(response) {
         <td>`+ data[i]['reference_id'] +`</td>
         <td>`+ data[i]['name'] +`</td>
         <td>`+ Plugin_datetime.dbDateOnly(data[i]['created_at']) +`</td>
-        <td><button class="btn btn-info btn-sm">Population</button></td>
-        <td><button class="btn btn-primary btn-sm" onclick="editData(`+i+`)">Edit</button></td>
-        <td><button class="btn btn-danger btn-sm" onclick="deleteData(`+i+`)">Delete</button></td>
+		<td>
+			<select class="js-jkgbzxcvsdfd puroks" style="border: none;">
+				<option value='0'>Select Action</option>
+				<option value='`+i+`'>Population</option>
+				<option value='`+JSON.stringify({id: i, action: 'edit'})+`'>Edit</option>
+				<option value='`+JSON.stringify({id: i, action: 'delete'})+`'>Delete</option>
+			</select>
+		</td>
       </tr>`);
+	
+	  	$('.puroks').on('change', function () {
+			let data = JSON.parse($(this).val());
+
+			switch (data.action) {
+				case 'edit':
+					editData(data.id);
+					break;
+				case 'delete':
+					deleteData(data.id);
+					break;
+			}
+		});
 	});
 }
 
+
 function editData(index) {
-	var data = barangay_sitio.table.data[index];
+	var data = barangay_purok.table.data[index];
 	Plugin_ui.editModalDataText(
-		'cims_sitio', 
+		'cims_purok', 
 		'reference_id', 
 		data['reference_id'],
 		'name',
-		'Edit sitio: ' + data['name'],
+		'Edit purok: ' + data['name'],
 		data['name'], 
 		'',
 		function () { showLoading(); },
@@ -60,7 +79,7 @@ function editData(index) {
 		function (response) {
 			if(response.success) {
 				Swal.fire('Success', 'successfully updated', 'success').then( async () => {
-					fetchSitio(getUserBrgyInfo()['brgy_code'], 1);
+					fetchPurok(getUserBrgyInfo()['brgy_code'], 1);
 				});
 			}
 			else {
@@ -70,11 +89,11 @@ function editData(index) {
 }
 
 function deleteData(index) {
-	var data = barangay_sitio.table.data[index];
+	var data = barangay_purok.table.data[index];
 	Plugin_ui.deleteModalWithPassword(
 		"Delete confirmation", 
-		"Delete purok " + data['name'] + "?", 
-		"cims_sitio", 
+		"Delete sitio " + data['name'] + "?", 
+		"cims_purok", 
 		[['reference_id','=', data['reference_id']]],
 		Plugin_auth.getLocalUser()['reference_id'], 
 		function () {
@@ -86,7 +105,7 @@ function deleteData(index) {
 		function (response) {
 			if(response.success) {
 				Swal.fire('Success', response.message, 'success').then( async () => {
-					fetchSitio(getUserBrgyInfo()['brgy_code'], 1);
+					fetchPurok(getUserBrgyInfo()['brgy_code'], 1);
 				});
 			}
 			else {
