@@ -49,6 +49,7 @@
           hideAddPurok();
           Swal.fire('Success', 'Purok successfully created', 'success').then( async () => {
             $('.js-jkavzxnmashf').val('');
+            fetchPurok(getUserBrgyInfo()['brgy_code'], 1);
           });
         }
         else {

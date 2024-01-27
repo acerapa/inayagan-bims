@@ -49,6 +49,7 @@
           hideAddSitio();
           Swal.fire('Success', 'Sitio successfully created', 'success').then( async () => {
             $('.js-klzw39azmcbd').val('');
+            fetchSitio(getUserBrgyInfo()['brgy_code'], 1);
           });
         }
         else {

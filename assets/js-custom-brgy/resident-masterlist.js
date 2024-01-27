@@ -25,6 +25,7 @@ $(".js-hjaxcnmvbzse").click(function () {
 function fetchResidents(city_code, brgy_code, page) {
 	showLoading();
 	$.get( gv.api + "cims/resident_masterlist?city_code=" + city_code + "&brgy_code=" + brgy_code, function (response) {
+	// $.get( gv.api + "cims/resident_masterlist", function (response) {
 		resident_masterlist.table = response;
 		hideLoading();
 		appendResidentTable(response);
@@ -32,7 +33,7 @@ function fetchResidents(city_code, brgy_code, page) {
 }
 
 function appendResidentTable(response) {
-	var data = response.data;
+	var data = response;
 
 	$(".js-jkhy4azxmf9g tbody").html('');
 	$.each(data, function (i) {
