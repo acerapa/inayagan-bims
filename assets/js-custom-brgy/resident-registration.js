@@ -35,6 +35,74 @@ $(".js-jkhytrsdfde4").change(function () {
 	});
 });
 
+$(".inp-sitio_refid").html('');
+$(".inp-sitio_refid").append("<option value='0'>Please wait..</option>");
+fetchSitioForRegistration(getUserBrgyInfo()['brgy_code'], 1);
+
+function fetchSitioForRegistration(brgy_code, page) {
+	var args = {
+		table: "cims_sitio",
+		getClm: 'all',
+		where: [
+			["brgy_code", brgy_code],
+			["status","1"]
+		],
+		orderByClm: 'name',
+		orderBySort: 'asc',
+		numOfRow: 1000,
+		page: page
+	};
+
+	$.get( gv.api + "api/plugin_query/getRowPaginate?" + $.param(args), function (response) {
+		$(".inp-sitio_refid").html('');
+		$(".inp-sitio_refid").append("<option value='0'>Select Sitio</option>");
+		response.data.forEach(sitio => {
+			$(".inp-sitio_refid").append(`<option value='${sitio.reference_id}'>${sitio.name}</option>`);
+		});
+	});
+}
+
+fetchPurokForRegistration(getUserBrgyInfo()['brgy_code'], 1);
+
+function fetchPurokForRegistration(brgy_code, page) {
+	var args = {
+		table: "cims_purok",
+		getClm: 'all',
+		where: [
+			["brgy_code", brgy_code],
+			["status","1"]
+		],
+		orderByClm: 'name',
+		orderBySort: 'asc',
+		numOfRow: 1000,
+		page: page
+	};
+	$('.inp-purok_refid').html('');
+	$('.inp-purok_refid').html('<option value="0">Please wait ...</option>');
+	$.get( gv.api + "api/plugin_query/getRowPaginate?" + $.param(args), function (response) {
+		$('.inp-purok_refid').html('');
+		$('.inp-purok_refid').append("<option value='0'>Select Purok</option>");
+		response.data.forEach(purok => {
+			$(".inp-purok_refid").append(`<option value='${purok.reference_id}'>${purok.name}</option>`);
+		})
+	});
+}
+
+fetchHouseholdForRegistration(getUserCityInfo()['city_code'], getUserBrgyInfo()['brgy_code'], 1);
+
+function fetchHouseholdForRegistration(city_code, brgy_code, page) {
+
+	$('.inp-household_refid').html('');
+	$('.inp-household_refid').html('<option value="0">Please wait ...</option>');
+	Plugin_query.getRecordPaginate("cims_household", "all", [["city_code","=",city_code],["brgy_code","=",brgy_code]], "name", "asc", 25, page, function (response) {
+		$('.inp-household_refid').html('');
+		$('.inp-household_refid').html('<option value="0">Select Household</option>');
+		response.data.forEach(household => {
+			$('.inp-household_refid').append(`<option value='${household.reference_id}'>${household.name}</option>`);
+		});
+	});
+}
+
 function saveLocal() {
 	var user_refid = Plugin_refid.generateLocal('USR');
 	var data = {

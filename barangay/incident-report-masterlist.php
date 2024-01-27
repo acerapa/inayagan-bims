@@ -40,8 +40,26 @@
                                 <div class="page-wrapper">
                                     <div class="page-body">
                                         <div class="row">
-                                            
-                                            
+                                            <div class="card table-card">
+                                                <div class="card-block">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover js-hjgvfcdsews">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No.</th>
+                                                                    <th>Reference No.</th>
+                                                                    <th>Name</th>
+                                                                    <th>Reg. Date</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -55,6 +73,13 @@
     </div>
     
     <?php include "c-footer-library.php"; ?>
+    <script>
+        $(document).ready(function () {
+            $.get(gv.api + "cims/all_reports", function (response) {
+                console.log(response);
+            });
+        });
+    </script>
 </body>
 
 </html>

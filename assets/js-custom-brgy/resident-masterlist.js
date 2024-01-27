@@ -24,9 +24,10 @@ $(".js-hjaxcnmvbzse").click(function () {
 
 function fetchResidents(city_code, brgy_code, page) {
 	showLoading();
-	$.get( gv.api + "cims/resident_masterlist?city_code=" + city_code + "&brgy_code=" + brgy_code, function (response) {
+	$.get( gv.api + "cims/resident_all", function (response) {
 	// $.get( gv.api + "cims/resident_masterlist", function (response) {
 		resident_masterlist.table = response;
+		console.log(response)
 		hideLoading();
 		appendResidentTable(response);
 	});
