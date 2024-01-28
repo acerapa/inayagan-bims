@@ -40,21 +40,24 @@
                                 <div class="page-wrapper">
                                     <div class="page-body">
                                         <div class="row">
-                                            <div class="card table-card">
+                                            <div class="card table-card" style="width: 100%;">
                                                 <div class="card-block">
                                                     <div class="table-responsive">
-                                                        <table class="table table-hover js-hjgvfcdsews">
+                                                        <table class="table table-hover js-jkhy4azxmf9g">
                                                             <thead>
                                                                 <tr>
                                                                     <th>No.</th>
-                                                                    <th>Reference No.</th>
-                                                                    <th>Name</th>
-                                                                    <th>Reg. Date</th>
-                                                                    <th>Action</th>
+                                                                    <th>Type</th>
+                                                                    <th>Incident Narrative</th>
+                                                                    <th>Action Taken</th>
+                                                                    <th>Prepared By</th>
+                                                                    <th>Created By</th>
+                                                                    <th>Incident Date</th>
+                                                                    <th>Prepared Date</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                            
+                                                                <!-- Append rows -->
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -75,9 +78,28 @@
     <?php include "c-footer-library.php"; ?>
     <script>
         $(document).ready(function () {
-            $.get(gv.api + "cims/all_reports", function (response) {
+            $.get(gv.api + "cims/all_incident_reports", function (response) {
                 console.log(response);
+                appendIncidentTable(response);
             });
+
+            function appendIncidentTable(response) {
+                var data = response;
+
+                $(".js-jkhy4azxmf9g tbody").html('');
+                $.each(data, function (i) {
+                    $(".js-jkhy4azxmf9g tbody").append(`<tr>
+                    <td>`+ (i + 1) +`</td>
+                    <td>`+ data[i]['type_name'] +`</td>
+                    <td>`+ data[i]['action_taken'] +`</td>
+                    <td>`+ data[i]['prepared_by'] +`</td>
+                    <td>`+ data[i]['created_by_name'] +`</td>
+                    <td>`+ data[i]['incident_date'] +`</td>
+                    <td>`+ data[i]['prepared_date'] +`</td>
+                    <td>`+ Plugin_datetime.dbDateOnly(data[i]['created_at']) +`</td>
+                </tr>`);
+                });
+            }
         });
     </script>
 </body>

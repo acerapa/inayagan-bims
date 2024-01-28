@@ -66,7 +66,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-4 col-md-12">
+                                            <div class="col-xl-4 col-md-12 d-none">
                                                 <div class="card">
                                                     <div class="card-block">
                                                         <div class="row">

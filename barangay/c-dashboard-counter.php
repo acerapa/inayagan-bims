@@ -48,7 +48,7 @@
         </div>
     </div>
 </div>
-<div class="col-xl-3 col-md-6">
+<div class="col-xl-3 col-md-6 d-none">
     <div class="card">
         <div class="card-block">
             <div class="row align-items-center">
