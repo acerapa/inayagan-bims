@@ -51,7 +51,7 @@
                                                             <label for="requestor" class="col-sm-4 col-form-label">Select Requestor</label>
                                                             <div class="col-sm-8">
                                                                 <select name="requestor" id="requestor" class="form-control form-control-lg">
-                                                                    <option value="">Test</option>
+                                                                    <option value="">Select Requestor</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -71,43 +71,47 @@
                                                         <h6 class="mt-10 px-20">TO WHOM IT MAY CONCERN:</h6>
                                                         
                                                         <p class="mt-4 px-20 text-sm indent-10 text-justify">
-                                                            This is to certify that MAURICE S. NADER, Filipino ,59 years of Age, born on Jul. 17, 1977, migrated and resides at Brgy. San Juan, Palompon, Leyte, Philippines, is personally known to me to be of good moral character and law abiding citizen in the community where she resides.
+                                                            This is to certify that <strong class="name">MAURICE S. NADER</strong> ,<span class="age">59</span> years of Age, born on <span class="birthdate">Jul. 17, 1977</span>, migrated and resides at Brgy. Inayagan, Nage, Cebu, Philippines, is personally known to me to be of good moral character and law abiding citizen in the community where she resides.
                                                         </p>
                                                         
                                                         <p class="mt-2 px-20 text-sm indent-10 text-justify">
-                                                            She has never been convicted of any criminal offense involving moral turpitude cases.
+                                                            He/She has never been convicted of any criminal offense involving moral turpitude cases.
                                                         </p>
 
                                                         <p class="mt-2 px-20 text-sm indent-10 text-justify">
-                                                            That as per record/ file in our barangay no name or person of MAURICE S. NADER has been appeared or recorded.
+                                                            That as per record/ file in our barangay no name or person of <strong class="name">MAURICE S. NADER</strong> has been appeared or recorded.
                                                         </p>
 
                                                         <p class="mt-2 px-20 text-sm indent-10 text-justify">
-                                                            This certification is issued upon the request of MAURICE S. NADER for whatever legal purpose this may serve.
+                                                            This certification is issued upon the request of <strong class="name">MAURICE S. NADER</strong> for whatever legal purpose this may serve.
                                                         </p>
 
                                                         <p class="mt-2 px-20 text-sm indent-10 text-justify">
-                                                            ISSUED on this 26th day of January, 2024 at Brgy. Inayagan, Naga, Cebu.
+                                                            ISSUED on this <span class="this_day" >26th</span> day of <span class="this_month">January</span>, <span class="this_year">2024</span> at Brgy. Inayagan, Naga, Cebu.
                                                         </p>
 
                                                         <div class="mt-3 flex px-20 gap-10 mb-20">
                                                             <div>
                                                                 <b class="text-sm">
-                                                                    <u>MAURICE S. NADER</u>
+                                                                    <u class="name">MAURICE S. NADER</u>
                                                                 </b>
                                                                 <p class="text-sm m-0">Affiant</p>
-                                                                <p class="text-sm m-0">Issued on: 01/20/2024</p>
+                                                                <p class="text-sm m-0">Issued on: <span class="this_date">01/20/2024</span></p>
                                                                 <p class="text-sm m-0">Issued at: Inayagan, Naga</p>
                                                             </div>
                                                             <div>
                                                                 <div>
                                                                     <p class="text-sm m-0">Prepared by:</p>
-                                                                    <p class="indent-10 text-sm m-0"></p>
+                                                                    <p class="indent-10 text-sm ml-10 mb-0">
+                                                                        <input type="text" class="form-control" />
+                                                                    </p>
                                                                     <p class="indent-10 text-sm m-0">Brgy. Secretary</p>
                                                                 </div>
                                                                 <div>
                                                                     <p class="text-sm m-0">Prepared by:</p>
-                                                                    <p class="indent-10 text-sm m-0"></p>
+                                                                    <p class="indent-10 text-sm ml-10 mb-0">
+                                                                        <input type="text" class="form-control" />
+                                                                    </p>
                                                                     <p class="indent-10 text-sm m-0">Brgy. Captain</p>
                                                                 </div>
                                                             </div>
@@ -132,7 +136,45 @@
         $(document).ready(() => {
             $(".js-nmxaxnsdjfgr").text("Cebu");
             $(".js-jkaxndtq1zma").text("City of Talisay");
-            $(".js-hbzxcvdfgftre").text( getUserBrgyInfo()['brgy_name']);
+            $(".js-hbzxcvdfgftre").text(getUserBrgyInfo()['brgy_name']);
+
+            let residents = [];
+
+            $('#requestor').html('');
+            $('#requestor').html('<option value="0">Please wait ...</option>');
+
+            $.get( gv.api + "cims/resident_all", function (response) {
+                residents = response;
+                $('#requestor').html('');
+                $('#requestor').html('<option value="0">Select Requestor</option>');
+                response.forEach(resident => {
+                    $('#requestor').append(`<option value='${resident.reference_id}'>${resident.firstname + ' ' + resident.lastname}</option>`);
+                });
+            });
+
+            $('.age').html('__');
+            $('.name').html('_________');
+            $('.birthdate').html('__/__/___');
+            $('.this_date').html('__/__/___');
+            
+            $('#requestor').on('change', function () {
+                let selected_resident = residents.find(res => res.reference_id == $(this).val());
+                
+                // interpolations
+                $('.name').html(selected_resident.firstname + (selected_resident.middlename ? " " + selected_resident.middlename[0].toUpperCase()+ ". " : " " ) + selected_resident.lastname);
+
+                $('.age').html((new Date()).getFullYear() - new Date(selected_resident.birthday).getFullYear());
+              
+                let birthday_arr = new Date(selected_resident.birthday).toDateString().split(' ');
+                birthday_arr.shift();
+                let birthday = birthday_arr.join(' ');
+
+                $('.birthdate').html(birthday);
+
+                let today = new Date()
+
+                $('.this_date').html(`${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`);
+            })
         })
     </script>
 </body>

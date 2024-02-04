@@ -47,6 +47,7 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th>No.</th>
+                                                                    <th>Reference No</th>
                                                                     <th>Type</th>
                                                                     <th>Incident Narrative</th>
                                                                     <th>Action Taken</th>
@@ -90,6 +91,7 @@
                 $.each(data, function (i) {
                     $(".js-jkhy4azxmf9g tbody").append(`<tr>
                     <td>`+ (i + 1) +`</td>
+                    <td>`+ data[i]['reference_id'] +`</td>
                     <td>`+ data[i]['type_name'] +`</td>
                     <td>`+ data[i]['action_taken'] +`</td>
                     <td>`+ data[i]['prepared_by'] +`</td>

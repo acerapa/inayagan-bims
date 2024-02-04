@@ -16543,12 +16543,20 @@ body.dark {
   margin-top: 12px;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+
 .mb-10 {
   margin-bottom: 40px;
 }
 
 .mb-20 {
   margin-bottom: 80px;
+}
+
+.ml-10 {
+  margin-left: 40px;
 }
 
 .text-sm {
