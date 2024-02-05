@@ -16498,6 +16498,10 @@ body.dark {
   padding: 12px;
 }
 
+.p-5 {
+  padding: 20px;
+}
+
 .py-10 {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -16581,4 +16585,39 @@ body.dark {
 
 .gap-10 {
   gap: 40px;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.shadow-sm {
+  box-shadow: 0px 1px 10px #80808021;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.max-w-880px {
+  max-width: 880px;
+} 
+
+
+@media print {
+  .d-none {
+    display: none !important;
+  }
 }

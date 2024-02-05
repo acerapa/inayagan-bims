@@ -80,7 +80,6 @@
     <script>
         $(document).ready(function () {
             $.get(gv.api + "cims/all_incident_reports", function (response) {
-                console.log(response);
                 appendIncidentTable(response);
             });
 

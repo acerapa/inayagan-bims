@@ -45,6 +45,11 @@
                                                     <div class="card-header">
                                                         <h5>Subpoena</h5>
                                                         <span>Input <code>NA</code> if not applicable</span>
+
+                                                        <div class="alert alert-success mt-2" role="alert">
+                                                            Currently Inprogress due to lack of format available. For Desired flow, please refer here: 
+                                                            <a href="/inayagan-bims/barangay/printables-brgy-clearance.php">Barangay Clearance</a>
+                                                        </div>
                                                     </div>
                                                     <div class="card-block">
                                                         <h5 class="text-center mt-4">Republic of the Philippines</h5>
